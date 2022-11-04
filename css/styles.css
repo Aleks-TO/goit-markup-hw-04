@@ -113,6 +113,12 @@ body {
 }
 .authoriz-mail,
 .authoriz-tel {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #757575;
 }
 .authoriz-mail:focus,
@@ -121,10 +127,17 @@ body {
 .authoriz-tel:hover {
   color: var(--accent-text);
 }
-
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* ------HERO----- */
 .hero {
   background-color: var(--bg-dark-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero .container {
   padding: 200px 0;
