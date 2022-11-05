@@ -331,6 +331,47 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/* ------CLIENTS----- */
+.clients {
+  padding: 94px 0;
+}
+.clients-text {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #afb1b8;
+}
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-text);
+  border-color: var(--accent-text);
+}
 
 /* ------FOOTER----- */
 
