@@ -58,12 +58,14 @@ body {
 .header {
   border-bottom: 1px solid var(--header-line);
 }
-.heder-container {
+.header-container {
   display: flex;
   align-items: center;
 }
 .logo-link {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   font-family: 'Raleway';
   font-weight: 700;
@@ -103,7 +105,7 @@ body {
 }
 .authoriz-list {
   display: flex;
-  margin-left: auto;
+  margin: 0 0 0 auto;
 }
 .authoriz-item {
   font-weight: 500;
@@ -266,6 +268,9 @@ body {
   padding: 94px 0;
   background-color: var(--bg-section-second);
 }
+.team-text-cont {
+  background-color: #fff;
+}
 
 .team-title {
   margin-bottom: 50px;
@@ -310,7 +315,6 @@ body {
   height: 44px;
 
   border-radius: 50%;
-  background-color: transparent;
   color: var(--bg-icon-color);
 }
 .team-social-icon {
@@ -325,7 +329,7 @@ body {
 .team-text {
   display: block;
   font-weight: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -389,6 +393,7 @@ body {
   display: block;
   margin-right: 0px;
   margin-bottom: 20px;
+  padding: 0;
   color: var(--light-text);
 }
 
@@ -466,9 +471,10 @@ footer .team-social-link {
   background: #f5f4fa;
   border-color: transparent;
   border-radius: 4px;
+  cursor: pointer;
 }
 .portfolio-btn:hover,
-.portfolio-btn:active {
+.portfolio-btn:focus {
   background: var(--bg-btn-active);
   color: var(--light-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
