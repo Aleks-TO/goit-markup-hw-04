@@ -16,6 +16,10 @@
   --bg-btn-active: #188ce8;
   --bg-btn: #2196f3;
   --bg-dark-color: #2f303a;
+  --header-line: #ececec;
+  --bg-icon-preference: #f5f4fa;
+  --bg-section-second: #f5f4fa;
+  --bg-icon-color: #afb1b8;
 }
 /* ------RESETS----- */
 .list {
@@ -52,7 +56,7 @@ body {
 }
 /* ------HEADER----- */
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-line);
 }
 .heder-container {
   display: flex;
@@ -168,6 +172,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--light-text);
+
   background-color: var(--bg-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -213,7 +218,8 @@ body {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background: #f5f4fa;
+
+  background: var(--bg-icon-preference);
   border-radius: 4px;
 }
 .preference-subtitle {
@@ -254,14 +260,11 @@ body {
   gap: 30px;
 }
 
-/* .work-item {
-} */
-
 /* ------TEAM----- */
 
 .team {
   padding: 94px 0;
-  background-color: #f5f4fa;
+  background-color: var(--bg-section-second);
 }
 
 .team-title {
@@ -305,9 +308,10 @@ body {
   justify-content: center;
   width: 44px;
   height: 44px;
+
   border-radius: 50%;
   background-color: transparent;
-  color: #afb1b8;
+  color: var(--bg-icon-color);
 }
 .team-social-icon {
   fill: currentColor;
@@ -322,6 +326,7 @@ body {
   display: block;
   font-weight: 400px;
   margin-bottom: 30px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -344,7 +349,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primary-text);
 }
 .clients-list {
   display: flex;
@@ -359,10 +364,10 @@ body {
   width: 170px;
   height: 92px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--bg-icon-color);
   border-radius: 4px;
   cursor: pointer;
-  color: #afb1b8;
+  color: var(--bg-icon-color);
 }
 .clients-icon {
   fill: currentColor;
@@ -425,7 +430,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--light-text);
 }
 .footer-contacts {
   margin-right: 70px;
